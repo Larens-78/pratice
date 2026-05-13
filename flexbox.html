@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Layout</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background Image */
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Common Card Style */
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid white;
+}
+
+.card:last-child {
+    border-right: none;
+}
+
+/* Left Section */
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Right Section */
+.text-box {
+    width: 150px;
+    height: 80px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Button Style */
+button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: white;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Left Card -->
+    <div class="card left">
+        <img src="https://via.placeholder.com/100" alt="profile" class="profile-img">
+        <h2>Name</h2>
+        <button>Click</button>
+    </div>
+
+    <!-- Right Card -->
+    <div class="card right">
+        <div class="text-box">
+            <p>Text</p>
+        </div>
+        <button>Click</button>
+    </div>
+
+</div>
+
+</body>
+</html>
