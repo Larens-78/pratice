@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+    <style>
+        *{
+            border: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding:150px;
+            background-color: cadetblue;
+
+        }
+        #container{
+            background-color: white;
+            height: 500px;
+            width: 500px;
+            border: 2px solid black;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+       
+        }
+         #container h1{
+            text-align: center;
+            padding: 5px;
+         }
+         #container p{
+            padding: 5px;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+         }
+         .container1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+         }
+        .container1 #mystar{
+            font-size: 50px;
+            color: yellow;
+            text-align: center;
+
+         }
+          .container1 #mysta{
+            font-size: 50px;
+            
+            text-align: center;
+
+         }
+         #container input{
+            height: 100px;
+            width: 300px;
+            border-radius: 30px;
+            border: 2px solid brown;
+            background-color:aquamarine;
+
+         }
+
+         
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Rate your experience</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, ex eos asperiores excepturi repellat corporis maiores quis! Amet, nostrum! Tenetur nisi dolore deserunt eum quas</p>
+
+        <div class="container1">
+        <i class="ri-star-fill" id="mystar"></i>
+        <i class="ri-star-fill" id="mystar"></i>
+        <i class="ri-star-fill" id="mystar"></i>
+        <i class="ri-star-fill" id="mystar"></i>
+        <i class="ri-star-fill" id="mysta"></i>
+        </div>
+        <input type="text" placeholder="Tell us about your experienece">
+
+    </div>
+</body>
+</html>
